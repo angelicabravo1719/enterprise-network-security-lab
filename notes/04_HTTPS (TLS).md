@@ -1,11 +1,11 @@
 # 04 — HTTPS (TLS) and SNI (Encrypted Web Traffic)
 
-## Goal (plain English)
+## Goal
 Show what **HTTPS** looks like in Wireshark and what you *can* and *cannot* see:
 - HTTPS is **HTTP inside encryption** (TLS), so Wireshark can’t read the web page content.
 - But you can still see some **metadata**, like the TLS handshake and often the **SNI** hostname.
 
-## Key concept (super important)
+## Key concept
 Wireshark does **not** label encrypted web traffic as “https”.
 - HTTPS traffic is usually decoded as:
   - **TLS** (HTTPS over TCP/443), or
@@ -70,7 +70,7 @@ So `ecs.office.com` could be:
 - These notes: `notes/04_https_tls.md`
 
 ## Why this matters
-- “I compared HTTP vs HTTPS in Wireshark. With HTTP I could read requests in plain text. With HTTPS I could only see the TLS handshake and metadata like SNI. That demonstrates how TLS protects confidentiality in transit, while still leaving some observable connection details.”
+- I compared HTTP vs HTTPS in Wireshark. With HTTP I could read requests in plain text. With HTTPS I could only see the TLS handshake and metadata like SNI. That demonstrates how TLS protects confidentiality in transit, while still leaving some observable connection details.
 
 ## Privacy note
 I didn’t decrypt traffic. I only used handshake metadata (SNI/ports) and avoided sensitive logins during capture.

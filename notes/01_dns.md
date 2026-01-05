@@ -1,6 +1,6 @@
 # 01 — DNS Lookup (Name → IP)
 
-## Goal (plain English)
+## Goal 
 Show what **DNS** looks like on the network:
 - DNS is how your computer turns a website name (like `example.com`) into an IP address.
 
@@ -17,7 +17,7 @@ Show what **DNS** looks like on the network:
   - `udp.port == 53` (most common)
   - `tcp.port == 53` (sometimes)
 
-## What I observed / how to explain it
+## What I observed
 - I saw a **DNS query** (my computer asking: “What is the IP for this domain?”)
 - I saw a **DNS response** (the DNS server replying with one or more IPs)
 - Common record types:
@@ -33,13 +33,13 @@ Show what **DNS** looks like on the network:
    - `Queries` → the domain name (ex: `example.com`)
    - `Answers` → returned IP address(es)
 
-## Evidence I saved (portfolio-friendly)
+## Evidence I saved 
 - Capture file: `captures/dns_lookup.pcapng`
 - Screenshot: `screenshots/dns_lookup.png`
 - These notes: `notes/01_dns.md`
 
-## Why this matters (interview-ready)
-- “DNS is the first step before most web traffic. I captured a DNS query/response in Wireshark to show how domain names resolve to IPs, and how investigators can map network traffic back to domains.”
+## Why this matters 
+- DNS is the first step before most web traffic. I captured a DNS query/response in Wireshark to show how domain names resolve to IPs, and how investigators can map network traffic back to domains.
 
 ## Privacy note
 I used non-sensitive browsing during capture and only recorded DNS resolution behavior.
